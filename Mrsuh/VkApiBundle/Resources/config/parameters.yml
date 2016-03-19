@@ -1,0 +1,11 @@
+parameters:
+    guzzle:
+        timeout: 6
+        connect_timeout: 3
+
+    vk:
+        app_id: '%mrsuh_vk_api.app_id%' #'5238737'
+        username: '%mrsuh_vk_api.username%' #'mrsuh@mail.ru'
+        password: '%mrsuh_vk_api.password%' #'YGwEQhenea13HqXbSrQz'
+        url: 'https://api.vk.com/method/'
+        scope: '%mrsuh_vk_api.scope%' # ['video', 'friends', 'messages']

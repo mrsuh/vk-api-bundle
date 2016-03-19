@@ -1,0 +1,8 @@
+services:
+    mrsuh_vk_api.storage:
+        class: Mrsuh\VkApiBundle\Storage\TokenStorageService
+        arguments: ['%kernel.root_dir%/token']
+
+    mrsuh_vk_api:
+        class: Mrsuh\VkApiBundle\Service\ApiService
+        arguments: ['@mrsuh_vk_api.storage', '%guzzle%', '%vk%']
