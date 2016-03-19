@@ -65,7 +65,7 @@ class ApiService
 
             $page = $session->getPage();
 
-            if($allow = $page->find('css', '#install_allow')){
+            if ($allow = $page->find('css', '#install_allow')) {
                 $allow->click();
             }
 
@@ -112,8 +112,8 @@ class ApiService
 
         $content = json_decode($response->getBody()->getContents(), true);
 
-        if(array_key_exists('error', $content)) {
-            if(!$auth){
+        if (array_key_exists('error', $content)) {
+            if (!$auth) {
                 $this->auth();
                 $content = $this->request($url, $data, $method, true);
             } else {
