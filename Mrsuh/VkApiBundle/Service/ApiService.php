@@ -104,7 +104,7 @@ class ApiService
      * @throws VkApiAuthenticationException
      * @throws VkApiRequestException
      */
-    public function request($url, array $data = [], $method = 'GET', $auth = false)
+    public function call($url, array $data = [], $method = 'GET', $auth = false)
     {
         $data['access_token'] = $this->token_storage->getToken();
 
