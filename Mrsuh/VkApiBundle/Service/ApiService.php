@@ -115,7 +115,7 @@ class ApiService
         if (array_key_exists('error', $content)) {
             if (!$auth) {
                 $this->auth();
-                $content = $this->request($url, $data, $method, true);
+                $content = $this->call($url, $data, $method, true);
             } else {
                 throw new VkApiRequestException($content['error']['error_msg'], $content['error']['error_code']);
             }
