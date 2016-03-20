@@ -52,7 +52,7 @@ $this->get('mrsuh_vk_api')->call('messages.get', ['scope' => 3]))
 ```
 
 helpful links:
-[application page] (https://vk.com/apps?act=manage)
-[permissions] (https://vk.com/dev/permissions)
-[error codes] (https://vk.com/dev/errors)
-[api methods] (https://vk.com/dev/methods)
+* [application page] (https://vk.com/apps?act=manage)
+* [permissions] (https://vk.com/dev/permissions)
+* [error codes] (https://vk.com/dev/errors)
+* [api methods] (https://vk.com/dev/methods)
