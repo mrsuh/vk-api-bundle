@@ -24,7 +24,7 @@ mrsuh_vk_api:
     username: 'mrsuh6@gmail.com' # username
     password: '1Gw738hfud9828hf3XbSrQ3' # password
     scope: ['video', 'friends', 'messages'] # list of permissions
-    version: 5.50
+    version: '5.50'
 ```
 
 Add the MrsuhVkApiBundle to your application's kernel:
