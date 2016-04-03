@@ -9,3 +9,4 @@ parameters:
         password: '%mrsuh_vk_api.password%' #'YGwEQhenea13HqXbSrQz'
         url: 'https://api.vk.com/method/'
         scope: '%mrsuh_vk_api.scope%' # ['video', 'friends', 'messages']
+        version: '%mrsuh_vk_api.version%' # ['video', 'friends', 'messages']

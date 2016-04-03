@@ -107,6 +107,7 @@ class ApiService
     public function call($url, array $data = [], $method = 'GET', $auth = false)
     {
         $data['access_token'] = $this->token_storage->getToken();
+        $data['v'] = $this->vk_params['version'];
 
         $response = $this->client->request($method, $this->vk_params['url'] . $url . '?' . http_build_query($data));
 

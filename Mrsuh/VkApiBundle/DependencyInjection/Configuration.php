@@ -18,7 +18,8 @@ class Configuration implements ConfigurationInterface
             ->variableNode('app_id')->cannotBeEmpty()->end()
             ->variableNode('username')->cannotBeEmpty()->end()
             ->variableNode('password')->cannotBeEmpty()->end()
-            ->variableNode('scope')->cannotBeEmpty()->end();
+            ->variableNode('scope')->cannotBeEmpty()->end()
+            ->variableNode('version')->cannotBeEmpty()->end();
 
         return $treeBuilder;
     }

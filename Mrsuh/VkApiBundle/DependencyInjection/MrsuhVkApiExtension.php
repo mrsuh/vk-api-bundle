@@ -25,6 +25,7 @@ class MrsuhVkApiExtension extends Extension
         $container->setParameter('mrsuh_vk_api.username', $config['username']);
         $container->setParameter('mrsuh_vk_api.password', $config['password']);
         $container->setParameter('mrsuh_vk_api.scope', $config['scope']);
+        $container->setParameter('mrsuh_vk_api.version', $config['version']);
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.yml');
