@@ -20,9 +20,9 @@ Add parameters to your app/config.yml file
 
 ```yml
 mrsuh_vk_api:
-    app_id: '58384343' # application id
-    username: 'mrsuh6@gmail.com' # username
-    password: '1Gw738hfud9828hf3XbSrQ3' # password
+    app_id: '0'
+    username: 'username'
+    password: 'pasword'
     scope: ['video', 'friends', 'messages'] # list of permissions
     version: '5.50' # api version
 ```
